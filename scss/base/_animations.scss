@@ -1,0 +1,18 @@
+// анимация секции герой
+
+.hero .hero__title {
+    animation: fade-top-to-botton 1s;
+}
+ 
+@keyframes fade-top-to-botton {
+    from {
+        transform: translateY(-250px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+

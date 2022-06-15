@@ -1,0 +1,77 @@
+/* Соц. сети icons Наша команда  */
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    background-color: var(--white-cl);
+    border-radius: 50%;
+
+    transition: background-color var(--anim-duration) var(--timing-anim);
+   
+    &:hover,
+    &:focus {
+        background-color: #2196f3;
+    }
+
+   
+}
+
+.socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials-icon {
+    fill: #afb1b8;
+    transition: fill var(--anim-duration) var(--timing-anim);
+
+    .socials-link:hover &,
+    .socials-link:focus & {
+        fill: var(--white-cl);
+    }
+}
+
+/* Соц. сети icons Footer  */
+.footer-icons {
+    display: flex;
+    align-items: center;
+}
+
+.socials-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: var(--anim-duration);
+    transition-timing-function: var(--timing-anim);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.list-icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials-icons {
+    fill: var(--white-cl);
+}

@@ -1,0 +1,25 @@
+/* Main portfolio */
+.section .list-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-portfolio {
+    margin-bottom: 50px;
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--second-txt-cl);
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+}

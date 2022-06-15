@@ -1,0 +1,38 @@
+/* особенности */
+.specifics {
+    display: flex;
+}
+.specifics__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 270px;
+    min-height: 120px;
+
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.specifics__item {
+    width: 270px;
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.specifics__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: var(--second-txt-cl);
+    margin-bottom: 10px;
+}
+.specifics__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

@@ -1,0 +1,39 @@
+/* оверлей с текстом */
+.card-overlay {
+    display: block;
+    justify-content: center;
+    padding-top: 63px;
+    padding-left: 24px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    top: 0;
+    left: 0;
+
+    position: absolute;
+    transform: translateY(100%);
+    transition: transform var(--anim-duration) var(--timing-anim);
+}
+
+.card-overlay-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-link .card-overlay {
+    transition: transform var(--anim-duration) var(--timing-anim);
+}
+
+.card-link:hover .card-overlay,
+.card-link:focus .card-overlay {
+    transform: translateY(0);
+}
+
+.overlay-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--white-cl);
+}

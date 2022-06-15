@@ -1,0 +1,186 @@
+/* форма хедера */
+.form {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    color: var(--main-txt-cl);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    &__field {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    
+    
+        &:last-child {
+                margin-bottom: 0;
+            }
+    }
+    
+    &__title {
+     font-weight: 700;
+     font-size: 20px;
+     line-height: 23px;
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: var(--second-txt-cl);
+    }
+
+   &__input-icon {
+    display: flex;
+    position: relative;
+   }
+}
+
+
+.inputs {
+    margin-top: 12px;
+}
+
+
+
+
+
+.form__input {
+    display: block;
+    width: 100%;
+    height: 38.95px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 11px 12px 11px 42px;
+
+    transition: border var(--anim-duration) var(--timing-anim);
+    outline: transparent;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+}
+
+.form__modal-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    fill: var(--second-txt-cl);
+    transition: fill var(--anim-duration) var(--timing-anim);
+}
+
+.form__field:hover .form__modal-icon,
+.form__field:focus .form__modal-icon {
+    fill: var(--accent-color);
+}
+
+.form__field .form__lable {
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.form__input:hover+.form__modal-icon,
+.form__input:focus+.form__modal-icon {
+    fill: var(--accent-color);
+}
+
+.form__textarea {
+    height: 116.84px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    padding-top: 12px;
+    padding-left: 16px;
+    transition: border var(--anim-duration) var(--timing-anim);
+    outline: transparent;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+}
+
+/* чекбокс */
+.checbox {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+
+
+    &__custom {
+        width: 16px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        margin-right: 7px;
+    
+        border-radius: 2px;
+        outline: 2px solid #000000;
+        outline-offset: -2px;
+    }
+   
+    &__icon {
+         display: block;
+        width: 16px;
+        height: 15px;
+        border: 2px solid var(--accent-color);
+        background-color: var(--accent-color);
+        border-radius: 2px;
+        opacity: 0;
+        transition: opacity var(--anim-duration) var(--timing-anim);
+    }
+    
+}
+
+
+.checkbox__input:checked+.checbox__custom {
+    outline: var(--accent-color);
+}
+
+.checkbox__input:checked+.checbox__custom .checbox__icon {
+    opacity: 1;
+}
+
+.checkbox__policy {
+    color: var(--accent-color);
+    padding-left: 2px;
+}
+
+.submit-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-cl);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: background-color var(--anim-duration) var(--timing-anim);
+    outline: transparent;
+}

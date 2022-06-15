@@ -1,0 +1,41 @@
+/* card set */
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-qap));
+    margin-top: calc(-1 * var(--card-set-qap));
+}
+
+.card-set>.card-item {
+    margin-left: var(--card-set-qap);
+    margin-top: var(--card-set-qap);
+    flex-basis: calc(100% / 3 - var(--card-set-qap));
+}
+
+.card-name {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+}
+
+.card-link:hover,
+.card-link:focus {
+    background: var(--white-cl);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+}
+
+.card-item .card-link {
+    transition: background-color var(--anim-duration) var(--timing-anim),
+        box-shadow var(--anim-duration) var(--timing-anim);
+}
