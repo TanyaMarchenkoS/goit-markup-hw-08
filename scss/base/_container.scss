@@ -4,15 +4,15 @@
     margin-left: auto;
     margin-right: auto;
 
-    @include mq(mobile) {
+    @include mg(mobile) {
         width: 480px;
     }
 
-    @include mq(tablet) {
+    @include mg(tablet) {
         width: 768px;
     }
 
-    @include mq(desktop) {
+    @include mg(desktop) {
         width: 1200px;
     }
 

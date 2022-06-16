@@ -923,21 +923,11 @@ button {
 }
 
 /* особенности */
-@media screen and (min-width: 480px) {
-  .specifics {
-    display: block;
-  }
+.specifics {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
-  .specifics {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .specifics {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -956,27 +946,14 @@ button {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 480px) {
-  .specifics__container {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .specifics__container {
-    width: 354;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .specifics__container {
-    width: 270px;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .specifics__item {
-    width: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 354px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
 }
 
