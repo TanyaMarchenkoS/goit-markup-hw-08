@@ -1,15 +1,22 @@
 /* особенности */
 .specifics {
    display: block;
+   flex-wrap: wrap;
+   margin-left: -30px;
+   margin-top: -30px;
 
    @include mg(tablet) {
     display: flex;
     flex-wrap: wrap;
    }
+
+   @include mg(desktop) {
+    display: flex;
+   }
 }
 
 .specifics__container {
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
     background: #f5f4fa;
@@ -18,13 +25,23 @@
 }
 
 .specifics__item {
+
    @include mg(tablet) {
-        width: 50%;
+        width: 354px;
+        flex-basis: calc(100% / 2 - 30px);
+        margin-left: 30px;
+        margin-top: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     @include mg(desktop) {
         width: 270px;
-        margin-right: 30px;
+        flex-basis: calc(100% / 4 - 30px);
+        margin-left: 30px;
+        margin-top: 30px;
         
         &:last-child {
             margin-right: 0;
