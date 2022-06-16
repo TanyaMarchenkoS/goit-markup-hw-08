@@ -1,4 +1,5 @@
 // utils
+@import './utils/mixins';
 @import './utils/vars';
 @import './utils/visually-hidden';
 
@@ -13,10 +14,10 @@
 @import './components/button';
 @import './components/socials';
 @import './components/logo';
-@import './components/_forms.scss/backdrop';
-@import './components/_forms.scss/modal-wrapper';
-@import './components/_forms.scss/form-hero';
-@import './components/_forms.scss/form-footer';
+@import './components/forms.scss/backdrop';
+@import './components/forms.scss/modal-wrapper';
+@import './components/forms.scss/form-hero';
+@import './components/forms.scss/form-footer';
 @import './components/card-overlay';
 
 // layouts
