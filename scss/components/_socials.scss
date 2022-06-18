@@ -44,6 +44,11 @@
 .footer-icons {
     display: flex;
     align-items: center;
+
+    @include mg (mobile-only) {
+        justify-content: center;
+        margin-bottom: 60px;
+    }
 }
 
 .socials-links {

@@ -16,17 +16,23 @@
         width: 1200px;
     }
 }
-// .header {
-//     border-bottom: 1px solid #ececec;
+.header {
+    border-bottom: 1px solid #ececec;
 
-//     &__container {
-//      display: flex;
-//      align-items: center;
-//     }
-// }
+    &__container {
+     display: flex;
+     align-items: center;
+    }
+}
 
-// .footer {
-//     background-color: #2f303a;
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-// }
+.footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include mg(mobile-only){
+        text-align: center;
+    
+    }
+
+}

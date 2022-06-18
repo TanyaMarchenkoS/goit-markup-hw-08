@@ -1,6 +1,11 @@
 /* Подвал */
+
 .address {
     margin-top: 20px;
+
+    @include mg(mobile-only) {
+        margin-bottom: 60px;
+    }
 }
 
 .footer-address {
@@ -16,29 +21,56 @@
         color: var(--accent-color);
     }
 }
-
+.list-footer {
+    @include mg(tablet-only){
+        text-align: center;
+    }
+}
 .item-footer {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @include mg(desktop) {
+        margin-bottom: 9px;
+    }
 
     &:last-child {
         margin-bottom: 0px;
     }
 }
+.footer-tablet {
+    @include mg(tablet){
+        display: flex;
+    }
 
-.footer-address {
-    display: block;
+    @include mg(tablet-only){
+        justify-content: center;
+    }
 }
 
 .footer>.container {
-    display: flex;
-    align-items: baseline;
+    display: block;
+  
+    @include mg(desktop){
+     display: flex;
+     align-items: baseline;
+    }
+
 }
 
-.container-icon {
-    margin-left: 69px;
-    margin-right: 93px;
+.container-icon {  
+    @include mg(tablet-only){
+        margin-left: 165px;
+    }
+    @include mg(desktop){
+      margin-left: 69px;
+      margin-right: 93px;
+    }
 }
-
+.footer-title {
+    @include mg(tablet-only){
+        text-align: center;
+    }
+}
 .footer-title,
 .subscribe-title {
     font-weight: 700;
