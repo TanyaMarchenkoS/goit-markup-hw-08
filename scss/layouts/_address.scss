@@ -44,6 +44,12 @@
 
     @include mg(tablet-only){
         justify-content: center;
+        align-items: baseline;
+    }
+
+    @include mg(desktop) {
+        justify-content: center;
+        align-items: baseline;
     }
 }
 

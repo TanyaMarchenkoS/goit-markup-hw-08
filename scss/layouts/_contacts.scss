@@ -2,6 +2,10 @@
 .contacts {
     display: flex;
     margin-left: auto;
+
+    @include mg(mobile-only){
+        display: none;
+    }
 }
 
 .contacts__item {
