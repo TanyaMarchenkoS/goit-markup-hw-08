@@ -913,8 +913,7 @@ button {
     display: none;
     top: 100%;
     left: 0;
-    width: 450px;
-    height: 100%;
+    width: 100%;
     padding: 48px 40px;
     background-color: #fff;
   }
@@ -1074,11 +1073,16 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts {
+    display: block;
+  }
+}
+
 .contacts__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 50px;
   color: var(--main-txt-cl);
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1089,6 +1093,18 @@ button {
   margin-right: 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__item {
+    margin-left: 70;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    margin-right: 50px;
+  }
+}
+
 .contacts__link {
   font-weight: 500;
   font-size: 14px;
@@ -1096,8 +1112,6 @@ button {
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1114,6 +1128,21 @@ button {
 
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__link {
+    font-size: 12px;
+    line-height: 1.17;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__icon {
@@ -1159,14 +1188,22 @@ button {
 
 .hero__title {
   text-transform: uppercase;
-  width: 696px;
+  width: 360px;
   letter-spacing: 0.06em;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 
 /* особенности */

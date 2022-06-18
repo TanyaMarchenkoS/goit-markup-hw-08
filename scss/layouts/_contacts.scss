@@ -6,17 +6,29 @@
     @include mg(mobile-only){
         display: none;
     }
+
+    @include mg(tablet-only) {
+        display: block;
+    }
 }
 
 .contacts__item {
     display: flex;
-    margin-right: 50px;
+    
     color: var(--main-txt-cl);
     align-items: center;
 
     &:last-child {
         margin-right: 0;
     }
+    @include  mg(tablet-only) {
+        margin-left: 70;
+    }
+
+    @include mg(desktop){
+        margin-right: 50px;
+    }
+
 }
 
 .contacts__link {
@@ -26,8 +38,7 @@
     letter-spacing: 0.02em;
     color: var(--main-txt-cl);
     text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     display: flex;
     align-items: center;
 
@@ -38,6 +49,15 @@
     &:hover,
     &:focus {
         color: var(--accent-color);
+    }
+    @include mg(tablet-only) {
+        font-size: 12px;
+        line-height: 1.17;
+        padding-bottom: 8px;
+    }
+    @include mg(desktop) {
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 
