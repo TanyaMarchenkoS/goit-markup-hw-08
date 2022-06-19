@@ -23,10 +23,14 @@
     &__title {
      font-weight: 700;
      font-size: 20px;
-     line-height: 23px;
+     line-height: 30px;
      text-align: center;
      letter-spacing: 0.03em;
      color: var(--second-txt-cl);
+
+     @include mg(desktop){
+        line-height: 23px;
+     }
     }
 
    &__input-icon {
@@ -39,9 +43,6 @@
 .inputs {
     margin-top: 12px;
 }
-
-
-
 
 
 .form__input {
@@ -115,11 +116,15 @@
     text-align: center;
     margin-top: 20px;
     justify-content: center;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     cursor: pointer;
 
+    @include mg(desktop){
+        font-size: 14px;
+        line-height: 1.71;
+    }
 
     &__custom {
         width: 16px;
@@ -136,7 +141,7 @@
     }
    
     &__icon {
-         display: block;
+        display: block;
         width: 16px;
         height: 15px;
         border: 2px solid var(--accent-color);

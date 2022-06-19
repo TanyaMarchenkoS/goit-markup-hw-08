@@ -12,6 +12,10 @@
     &__text--inverse {
         color: var(--accent-color);
     }
+
+    @include mg(mobile-only){
+        margin-right: 273px;
+    }
 }
 
 // цвет лого в футере

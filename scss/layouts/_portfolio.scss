@@ -2,11 +2,28 @@
 .section .list-portfolio {
     display: flex;
     align-items: center;
-    justify-content: center;
+   
+
+    @include mg(mobile-only) {
+        flex-wrap: wrap;
+    }
+
+    @include mg(tablet) {
+        justify-content: center;
+
+    }
 }
 
 .list-portfolio {
     margin-bottom: 50px;
+
+    @include mg(mobile-only) {
+        margin-bottom: 40px;
+    }
+    @include mg(tablet-only) {
+        margin-bottom: 30px;
+    }
+        
 }
 
 .portfolio-title {
@@ -22,4 +39,11 @@
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
+}
+
+.btn-item {
+    @include mg(mobile-only) {
+        margin-bottom: 15px;
+
+    }
 }

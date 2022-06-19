@@ -8,6 +8,7 @@
     @include mg(mobile-only) {
         position: absolute;
         display: none;
+        z-index: 1000;
 
         top: 100%;
         left: 0;
@@ -18,14 +19,17 @@
         background-color: #fff;
 
         &.is-open {
-         display: block;
+         display: block; 
+
         }
     }
     @include mg(tablet) {
         display: none;
     }
 }
-
+.menu-container__nav {
+  margin-bottom: 306px;
+}
 .menu-container__contacts {
     margin-top: auto;
 }

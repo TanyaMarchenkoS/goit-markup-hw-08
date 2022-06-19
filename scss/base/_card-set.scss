@@ -10,7 +10,23 @@
 .card-set>.card-item {
     margin-left: var(--card-set-qap);
     margin-top: var(--card-set-qap);
-    flex-basis: calc(100% / 3 - var(--card-set-qap));
+
+    @include mg(mobile-only) {
+        width: 450px;
+    }
+    // flex-basis: calc(100% / 1 - var(--card-set-qap));
+
+    @include mg(tablet-only) {
+        width: 354px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc(100% / 2 - var(--card-set-qap));
+    }
+
+    @include mg(desktop) {
+        flex-basis: calc(100% / 3 - var(--card-set-qap));
+    }
+
 }
 
 .card-name {
