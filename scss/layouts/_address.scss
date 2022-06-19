@@ -23,6 +23,7 @@
 }
 .list-footer {
     @include mg(tablet-only){
+        width: 232px;
         text-align: center;
     }
 }
@@ -38,11 +39,9 @@
     }
 }
 .footer-tablet {
-    @include mg(tablet){
-        display: flex;
-    }
 
     @include mg(tablet-only){
+        display: flex;
         justify-content: center;
         align-items: baseline;
     }
