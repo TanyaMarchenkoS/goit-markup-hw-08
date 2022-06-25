@@ -28,6 +28,10 @@
     color: var(--accent-color);
     text-decoration: none;
 
+    @include mg(tablet-only){
+        margin-left: 48px;
+    }
+
     @include mg(desktop) {
         font-size: 26px;
         line-height: 1.19;
@@ -38,3 +42,4 @@
     color: var(--white-cl);
    
 }
+

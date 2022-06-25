@@ -41,7 +41,7 @@
     border-radius: 0px 0px 4px 4px;
 
     @include mg(mobile-only) {
-        width: 450;
+        // width: 450;
         margin-bottom: 30px;
     
         &:last-child {
@@ -50,7 +50,7 @@
     }
     
     @include mg(tablet-only) {
-        width: 354px;
+        // width: 354px;
         flex-basis: calc(100% / 2 - 30px);
         margin-left: 30px;
         margin-top: 30px;

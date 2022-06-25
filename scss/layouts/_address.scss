@@ -47,6 +47,7 @@
     }
 
     @include mg(desktop) {
+        display: flex;
         justify-content: center;
         align-items: baseline;
     }
@@ -86,3 +87,4 @@
     color: var(--white-cl);
     margin-bottom: 20px;
 }
+
