@@ -244,7 +244,7 @@ button {
   }
 }
 
-.menu-button {
+.menu-toggle {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -254,26 +254,23 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .menu-toggle {
     display: none;
   }
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
 }
 
 .icon-menu:hover,
 .icon-menu:focus {
   fill: var(--accent-color);
+}
+
+.icon-cross:hover,
+.icon-menu:focus {
+  fill: var(--accent-color);
+}
+
+.menu-container.menu-toggle {
+  display: block;
 }
 
 /* Кнопка герой */
@@ -957,34 +954,26 @@ button {
   color: var(--white-cl);
 }
 
-@media screen and (max-width: 767.98px) {
-  .menu-container {
-    position: fixed;
-    display: none;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 48px 40px;
-    background-color: #fff;
-  }
-  .menu-container.is-open {
-    display: block;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 40px 48px 40px;
+  background-color: var(--white-cl);
+  z-index: 1000;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-container {
-    display: none;
-  }
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .menu-container__contacts {

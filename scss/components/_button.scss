@@ -1,32 +1,29 @@
-// Кнопка хедер
-.menu-button {
+// Кнопка мобильного меню 
+.menu-toggle {
     display: inline-flex;
     margin: 0;
     border: none;
     background-color: transparent;
-    
    
-    
     @include mg(tablet) {
         display: none;
     }
 }
 
-.menu-button .icon-cross {
-    display: none;
-}
-.menu-button.is-open .icon-cross{
-   display: block;
-}
-
-.menu-button.is-open .icon-menu {
-    display: none;
-}
-
 .icon-menu:hover,
+.icon-menu:focus {
+  fill: var(--accent-color);
+}
+
+.icon-cross:hover,
 .icon-menu:focus {
     fill: var(--accent-color);
 }
+.menu-container.menu-toggle {
+    display: block;
+    
+}
+
 /* Кнопка герой */
 .hero__button {
     font-weight: 700;

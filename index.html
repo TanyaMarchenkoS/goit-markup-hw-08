@@ -33,17 +33,13 @@
            <span class="logo__text logo__text--inverse">Web</span>Studio </a>
         <nav class="header-nav">
           <button 
-          type="button" 
-          class="menu-button"  
+          class="menu-toggle js-open-menu"  
           aria-expanded="false" 
-          eria-controls="menu-container"
-          data-menu-button>
-            <svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="icon-cross" href="./images/icons.svg#icon-close-black"></use>
+          aria-controls="mobile-menu">
+            <svg class="menu-button__icon" width="40" height="40" aria-label="Кнопка открытия мобильного меню">
               <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
-
           <ul class="navigation">
             <li class="navigation__item">
               <a class="navigation__link navigation__link--current" href="./index.html">Студия</a>
@@ -659,36 +655,48 @@
       </div>
     </footer>
      <!-- Mobile menu -->
-        <div class="menu-container" id="menu-container" data-menu>
-            <ul class="menu-container__nav">
-                  <li class="menu-container__item"><a href="./index.html" class="menu-container__link">Студия</a></li>
-                  <li class="menu-container__item"><a href="./portfolio.html" class="menu-container__link">Портфолио</a></li>
-                  <li class="menu-container__item"><a href="" class="menu-container__link">Контакты</a></li>
-            </ul>
-            <ul class="menu-container__contacts">
-                  <li class="menu-container__contacts-item">
-                    <a href="tel:+380961111111" class="menu-container__contacts-tel">+38 096 111 11 11</a>
-                  </li>
-                  <li class="menu-container__contacts-item">
-                    <a href="mailto:info@devstudio.com" class="menu-container__contacts-mail">info@devstudio.com</a>
-                  </li>
-            </ul>
-            <ul class="menu-container__socials">
-                  <li class="menu-container__socials-item">
-                    <a href="./index.html" class="menu-container__socials-link">Instagram</a>
-                  </li>
-                  <li class="menu-container__socials-item">
-                    <a href="./index.html" class="menu-container__socials-link">Twitter</a>
-                  </li>
-                  <li class="menu-container__socials-item">
-                    <a href="./index.html" class="menu-container__socials-link">Facebook</a>
-                  </li>
-                  <li class="menu-container__socials-item">
-                    <a href="./index.html" class="menu-container__socials-link">LinkedIn</a>
-                  </li>
-            </ul>
-        </div>
-    <script src="./js/menu.js"></script>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-button__icon" width="40" height="40" aria-label="Кнопка закрытия мобильного меню">
+          <use class="icon-cross" href="./images/icons.svg#icon-close_mobile"></use>
+        </svg>
+      </button>
+       <div class="mobile-menu">
+          <ul class="menu-container__nav">
+              <li class="menu-container__item"><a href="./index.html" class="menu-container__link">Студия</a></li>
+              <li class="menu-container__item"><a href="./portfolio.html" class="menu-container__link">Портфолио</a></li>
+              <li class="menu-container__item"><a href="" class="menu-container__link">Контакты</a></li>
+          </ul>
+          <ul class="menu-container__contacts">
+              <li class="menu-container__contacts-item">
+                <a href="tel:+380961111111" class="menu-container__contacts-tel">+38 096 111 11 11</a>
+              </li>
+              <li class="menu-container__contacts-item">
+                <a href="mailto:info@devstudio.com" class="menu-container__contacts-mail">info@devstudio.com</a>
+              </li>
+          </ul>
+          <ul class="menu-container__socials">
+              <li class="menu-container__socials-item">
+                <a href="./index.html" class="menu-container__socials-link">Instagram</a>
+              </li>
+              <li class="menu-container__socials-item">
+                <a href="./index.html" class="menu-container__socials-link">Twitter</a>
+              </li>
+              <li class="menu-container__socials-item">
+                <a href="./index.html" class="menu-container__socials-link">Facebook</a>
+              </li>
+              <li class="menu-container__socials-item">
+                <a href="./index.html" class="menu-container__socials-link">LinkedIn</a>
+              </li>
+          </ul>
+       </div> 
+    </div>
+   <!-- Мобильное меню -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/menu.js"></script>
+    <!-- Модальное окно -->
     <script src="./js/modal.js"></script>
     <!-- AOS animation library  --> 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
