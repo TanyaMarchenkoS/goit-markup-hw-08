@@ -67,6 +67,7 @@ body {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -270,7 +271,9 @@ button {
 }
 
 .menu-container.menu-toggle {
-  display: block;
+  position: absolute;
+  top: 15px;
+  left: 10px;
 }
 
 /* Кнопка герой */
@@ -960,9 +963,16 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 10px 40px 48px 40px;
+  padding: 48px 40px;
   background-color: var(--white-cl);
   z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;

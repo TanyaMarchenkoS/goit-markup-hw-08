@@ -20,7 +20,10 @@
     fill: var(--accent-color);
 }
 .menu-container.menu-toggle {
-    display: block;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    
     
 }
 
