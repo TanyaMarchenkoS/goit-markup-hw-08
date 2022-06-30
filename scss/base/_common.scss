@@ -5,16 +5,8 @@ body {
     font-family: var(--main-font);
 }
 .section {
-    
-    @include mg(mobile) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    @include mg(tablet) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    padding-top: 60px;
+    padding-bottom: 60px;
     
     @include mg(desktop) {
         padding-top: 94px;
