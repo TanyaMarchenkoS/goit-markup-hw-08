@@ -15,9 +15,7 @@
     display: block;
     text-align: center;
 
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+    @include retina {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url(../images/background/header-mb-2x.jpg);
     }
@@ -30,9 +28,7 @@
         // padding-top: 118px;
         // padding-bottom: 118px;
 
-        @media (min-device-pixel-ratio: 2), 
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+        @include retina {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url(../images/background/header-tablet-2x.jpg);
             }
@@ -47,9 +43,7 @@
         padding-top: 200px;
         padding-bottom: 200px;
 
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+        @include retina {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url(../images/background/header-desktop-2x.jpg);
         }
