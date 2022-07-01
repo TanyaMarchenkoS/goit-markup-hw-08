@@ -240,9 +240,7 @@
             </li>
             <li class="work__item">
               <img
-                srcset="./images/box/box3.jpg 1x, 
-                ./images/box/box3-2x.jpg 2x 
-                "
+                srcset="./images/box/box3.jpg 1x, ./images/box/box3-2x.jpg 2x"
                 class="work__img"
                 src="./images/box/box3.jpg"
                 alt="цветная голограмма на планшете"
@@ -262,8 +260,7 @@
             <li class="team-item" data-aos="flip-left" data-aos-duration="300">
               <picture>
                 <source
-                  srcset="./images/team/teamcard1.jpg 1x, 
-                  ./images/team/teamcard1-2x.jpg 2x"
+                  srcset="./images/team/teamcard1.jpg 1x, ./images/team/teamcard1-2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
@@ -274,8 +271,7 @@
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./images/team/teamcard1-mb.jpg 1x, 
-                  ./images/team/teamcard1-mb-2x.jpg 2x"
+                  srcset="./images/team/teamcard1-mb.jpg 1x, ./images/team/teamcard1-mb-2x.jpg 2x"
                   media="(min-width: 480px)"
                 />
                 <img
@@ -347,8 +343,7 @@
             <li class="team-item" data-aos="flip-left" data-aos-duration="600">
               <picture>
                 <source
-                  srcset="./images/team/teamcard2.jpg 1x, 
-                  ./images/team/teamcard2-2x.jpg 2x"
+                  srcset="./images/team/teamcard2.jpg 1x, ./images/team/teamcard2-2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
@@ -359,8 +354,7 @@
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./images/team/teamcard2-mb.jpg 1x,
-                   ./images/team/teamcard2-mb-2x.jpg 2x"
+                  srcset="./images/team/teamcard2-mb.jpg 1x, ./images/team/teamcard2-mb-2x.jpg 2x"
                   media="(min-width: 480px)"
                 />
                 <img
@@ -432,8 +426,7 @@
             <li class="team-item" data-aos="flip-left" data-aos-duration="900">
               <picture>
                 <source
-                  srcset="./images/team/teamcard3.jpg 1x,
-                  ./images/team/teamcard3-2x.jpg 2x"
+                  srcset="./images/team/teamcard3.jpg 1x, ./images/team/teamcard3-2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
@@ -444,8 +437,7 @@
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./images/team/teamcard3-mb.jpg 1x, 
-                  ./images/team/teamcard3-mb-2x.jpg 2x"
+                  srcset="./images/team/teamcard3-mb.jpg 1x, ./images/team/teamcard3-mb-2x.jpg 2x"
                   media="(min-width: 320px)"
                 />
                 <img
@@ -517,8 +509,7 @@
             <li class="team-item" data-aos="flip-left" data-aos-duration="1200">
               <picture>
                 <source
-                  srcset="./images/team/teamcard4.jpg 1x, 
-                  ./images/team/teamcard4-2x.jpg 2x"
+                  srcset="./images/team/teamcard4.jpg 1x, ./images/team/teamcard4-2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
@@ -529,8 +520,7 @@
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./images/team/teamcard4-mb.jpg 1x,
-                   ./images/team/teamcard4-mb-2x.jpg 2x"
+                  srcset="./images/team/teamcard4-mb.jpg 1x, ./images/team/teamcard4-mb-2x.jpg 2x"
                   media="(min-width: 480px)"
                 />
                 <img
@@ -787,26 +777,30 @@
     </footer>
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          class="menu-button__icon"
-          width="40"
-          height="40"
-          aria-label="Кнопка закрытия мобильного меню"
-        >
-          <use class="icon-cross" href="./images/icons.svg#icon-close_mobile"></use>
-        </svg>
-      </button>
-      <div class="mobile-menu">
+      <div class="mobile-menu-top">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            class="menu-button__icon"
+            width="40"
+            height="40"
+            aria-label="Кнопка закрытия мобильного меню"
+          >
+            <use class="icon-cross" href="./images/icons.svg#icon-close_mobile"></use>
+          </svg>
+        </button>
         <ul class="menu-container__nav">
           <li class="menu-container__item">
-            <a href="./index.html" class="menu-container__link">Студия</a>
+            <a href="./index.html" class="menu-container__link menu-container__link--current">Студия</a>
           </li>
           <li class="menu-container__item">
             <a href="./portfolio.html" class="menu-container__link">Портфолио</a>
           </li>
-          <li class="menu-container__item"><a href="" class="menu-container__link">Контакты</a></li>
+          <li class="menu-container__item">
+            <a href="" class="menu-container__link">Контакты</a>
+          </li>
         </ul>
+      </div>
+      <div class="mobile-menu-bottom">
         <ul class="menu-container__contacts">
           <li class="menu-container__contacts-item">
             <a href="tel:+380961111111" class="menu-container__contacts-tel">+38 096 111 11 11</a>
@@ -840,7 +834,7 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/menu.js"></script>
+    <script defer src="js/mobile.menu.js"></script>
     <!-- Модальное окно -->
     <script src="./js/modal.js"></script>
     <!-- AOS animation library  -->

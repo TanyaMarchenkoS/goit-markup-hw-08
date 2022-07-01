@@ -375,7 +375,8 @@
                 <div class="card-overlay-thumb">
                   <picture>
                     <source
-                      srcset="./images/project/project8.jpg 1x, ./images/project/project8-2x.jpg 2x"
+                      srcset="./images/project/project8.jpg 1x,
+                       ./images/project/project8-2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
@@ -548,34 +549,31 @@
     </footer>
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          class="menu-button__icon"
-          width="40"
-          height="40"
-          aria-label="Кнопка закрытия мобильного меню"
-        >
-          <use class="icon-cross" href="./images/icons.svg#icon-close_mobile"></use>
-        </svg>
-      </button>
-      <div class="mobile-menu">
+      <div class="mobile-menu-top">
+        <button class="menu-toggle js-close-menu">
+          <svg class="menu-button__icon" width="40" height="40" aria-label="Кнопка закрытия мобильного меню">
+            <use class="icon-cross" href="./images/icons.svg#icon-close_mobile"></use>
+          </svg>
+        </button>
         <ul class="menu-container__nav">
           <li class="menu-container__item">
             <a href="./index.html" class="menu-container__link">Студия</a>
           </li>
           <li class="menu-container__item">
-            <a href="./portfolio.html" class="menu-container__link">Портфолио</a>
+            <a href="./portfolio.html" class="menu-container__link menu-container__link--current">Портфолио</a>
           </li>
-          <li class="menu-container__item"><a href="" class="menu-container__link">Контакты</a></li>
+          <li class="menu-container__item">
+            <a href="" class="menu-container__link">Контакты</a>
+          </li>
         </ul>
+      </div>
+      <div class="mobile-menu-bottom">
         <ul class="menu-container__contacts">
           <li class="menu-container__contacts-item">
             <a href="tel:+380961111111" class="menu-container__contacts-tel">+38 096 111 11 11</a>
           </li>
           <li class="menu-container__contacts-item">
-            <a href="mailto:info@devstudio.com" class="menu-container__contacts-mail"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="menu-container__contacts-mail">info@devstudio.com</a>
           </li>
         </ul>
         <ul class="menu-container__socials">
@@ -601,6 +599,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/menu.js"></script>
+    <script defer src="js/mobile.menu.js"></script>
   </body>
 </html>
