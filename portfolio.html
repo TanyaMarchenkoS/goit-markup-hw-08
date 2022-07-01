@@ -29,20 +29,33 @@
         <a href="portfolio.html" class="logo" lang="en">
           <span class="logo__text logo__text--inverse">Web</span>Studio
         </a>
-        <nav  class="header-nav">
-          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg class="menu-button__icon" width="40" height="40" aria-label="Кнопка открытия мобильного меню">
+        <nav class="header-nav">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="menu-button__icon"
+              width="40"
+              height="40"
+              aria-label="Кнопка открытия мобильного меню"
+            >
               <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
           <ul class="navigation">
             <li class="navigation__item">
-              <a class="navigation__link" href="./index.html">Студия</a></li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--current" href="./portfolio.html">Портфолио</a>
+              <a class="navigation__link" href="./index.html">Студия</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Контакты</a></li>
+              <a class="navigation__link navigation__link--current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts">
@@ -92,7 +105,27 @@
             <li class="card-item">
               <a href="" class="card-link">
                 <div class="card-overlay-thumb">
-                  <img src="./images/project/project1.jpg" alt="#" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/project/project1.jpg 1x, ./images/project/project1-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project1-tablet.jpg    1x,
+                        ./images/project/project1-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project1-mb.jpg    1x,
+                        ./images/project/project1-mb-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/project/project1-mb.jpg" alt="#" max-width="450px" />
+                  </picture>
                   <div class="card-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -110,7 +143,27 @@
             <li class="card-item">
               <a href="" class="card-link">
                 <div class="card-overlay-thumb">
-                  <img src="./images/project/project2.jpg" alt="#" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/project/project2.jpg 1x, ./images/project/project2-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project2-tablet.jpg    1x,
+                        ./images/project/project2-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project2-mb.jpg    1x,
+                        ./images/project/project2-mb-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/project/project2-mb.jpg" alt="#" max-width="450px" />
+                  </picture>
                   <div class="card-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -130,7 +183,27 @@
             <li class="card-item">
               <a href="" class="card-link">
                 <div class="card-overlay-thumb">
-                  <img src="./images/project/project3.jpg" alt="#" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/project/project3.jpg 1x, ./images/project/project3-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project3-tablet.jpg    1x,
+                        ./images/project/project3-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project3-mb.jpg    1x,
+                        ./images/project/project3-mb-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/project/project3-mb.jpg" alt="#" max-width="450px" />
+                  </picture>
                   <div class="card-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -148,7 +221,27 @@
             <li class="card-item">
               <a href="" class="card-link">
                 <div class="card-overlay-thumb">
-                  <img src="./images/project/project4.jpg" alt="#" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/project/project4.jpg 1x, ./images/project/project4-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project4-tablet.jpg    1x,
+                        ./images/project/project4-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project4-mb.jpg    1x,
+                        ./images/project/project4-mb-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/project/project4-mb.jpg" alt="#" max-width="450px" />
+                  </picture>
                   <div class="card-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -166,7 +259,27 @@
             <li class="card-item">
               <a href="" class="card-link">
                 <div class="card-overlay-thumb">
-                  <img src="./images/project/project5.jpg" alt="#" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/project/project5.jpg 1x, ./images/project/project5-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project5-tablet.jpg    1x,
+                        ./images/project/project5-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project5-mb.jpg    1x,
+                        ./images/project/project5-mb-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/project/project5-mb.jpg" alt="#" max-width="450px" />
+                  </picture>
                   <div class="card-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -184,7 +297,27 @@
             <li class="card-item">
               <a href="" class="card-link">
                 <div class="card-overlay-thumb">
-                  <img src="./images/project/project6.jpg" alt="#" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/project/project6.jpg 1x, ./images/project/project6-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project6-tablet.jpg    1x,
+                        ./images/project/project6-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project6-mb.jpg    1x,
+                        ./images/project/project6-mb-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/project/project6-mb.jpg" alt="#" max-width="450px" />
+                  </picture>
                   <div class="card-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -202,7 +335,27 @@
             <li class="card-item">
               <a href="" class="card-link">
                 <div class="card-overlay-thumb">
-                  <img src="./images/project/project7.jpg" alt="#" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/project/project7.jpg 1x, ./images/project/project7-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project7-tablet.jpg    1x,
+                        ./images/project/project7-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project7-mb.jpg    1x,
+                        ./images/project/project7-mb-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/project/project7-mb.jpg" alt="#" max-width="450px" />
+                  </picture>
                   <div class="card-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -220,7 +373,27 @@
             <li class="card-item">
               <a href="" class="card-link">
                 <div class="card-overlay-thumb">
-                  <img src="./images/project/project8.jpg" alt="#" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/project/project8.jpg 1x, ./images/project/project8-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project8-tablet.jpg    1x,
+                        ./images/project/project8-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project8-mb.jpg    1x,
+                        ./images/project/project8-mb-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/project/project8-mb.jpg" alt="#" max-width="450px" />
+                  </picture>
                   <div class="card-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -238,7 +411,28 @@
             <li class="card-item">
               <a href="" class="card-link">
                 <div class="card-overlay-thumb">
-                  <img src="./images/project/project9.jpg" alt="#" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/project/project9.jpg 1x,
+                       ./images/project/project9-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project9-tablet.jpg    1x,
+                        ./images/project/project9-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/project9-mb.jpg    1x,
+                        ./images/project/project9-mb-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/project/project9-mb.jpg" alt="#" max-width="450px" />
+                  </picture>
                   <div class="card-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -261,11 +455,15 @@
       <div class="container">
         <div class="footer-tablet">
           <div class="footer-containers">
-            <a href="index.html" class="footer-logo" lang="en">Web<span class="logo-white">Studio</span></a>
+            <a href="index.html" class="footer-logo" lang="en"
+              >Web<span class="logo-white">Studio</span></a
+            >
             <address class="address">
               <ul class="list-footer">
                 <li class="item-footer">
-                  <a class="footer-address" href="https://goo.gl/maps/wZrhTmKTJjCUaYkh9">г. Киев, пр-т Леси Украинки, 26</a>
+                  <a class="footer-address" href="https://goo.gl/maps/wZrhTmKTJjCUaYkh9"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
                 </li>
                 <li class="item-footer">
                   <a href="mailto:info@devstudio.com" class="footer-mailto"> info@devstudio.com</a>
@@ -280,28 +478,52 @@
             <h3 class="footer-title">присоединяйтесь</h3>
             <ul class="footer-icons">
               <li class="list-icon">
-                <a class="socials-links link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Instagram">
+                <a
+                  class="socials-links link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Instagram"
+                >
                   <svg class="socials-icons" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="list-icon">
-                <a class="socials-links link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Twitter">
+                <a
+                  class="socials-links link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Twitter"
+                >
                   <svg class="socials-icons" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="list-icon">
-                <a class="socials-links link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Facebook">
+                <a
+                  class="socials-links link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Facebook"
+                >
                   <svg class="socials-icons" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="list-icon">
-                <a class="socials-links link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Linkedin">
+                <a
+                  class="socials-links link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Linkedin"
+                >
                   <svg class="socials-icons" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
@@ -313,8 +535,9 @@
         <form class="subscribe">
           <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
           <div class="subscribe-content">
-            <input class="subscribe-input" type="email" name="eser-email" placeholder="E-mail">
-            <button class="subscribe-btn" type="submit">Подписаться
+            <input class="subscribe-input" type="email" name="eser-email" placeholder="E-mail" />
+            <button class="subscribe-btn" type="submit">
+              Подписаться
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
@@ -326,14 +549,23 @@
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg class="menu-button__icon" width="40" height="40" aria-label="Кнопка закрытия мобильного меню">
+        <svg
+          class="menu-button__icon"
+          width="40"
+          height="40"
+          aria-label="Кнопка закрытия мобильного меню"
+        >
           <use class="icon-cross" href="./images/icons.svg#icon-close_mobile"></use>
         </svg>
       </button>
       <div class="mobile-menu">
         <ul class="menu-container__nav">
-          <li class="menu-container__item"><a href="./index.html" class="menu-container__link">Студия</a></li>
-          <li class="menu-container__item"><a href="./portfolio.html" class="menu-container__link">Портфолио</a></li>
+          <li class="menu-container__item">
+            <a href="./index.html" class="menu-container__link">Студия</a>
+          </li>
+          <li class="menu-container__item">
+            <a href="./portfolio.html" class="menu-container__link">Портфолио</a>
+          </li>
           <li class="menu-container__item"><a href="" class="menu-container__link">Контакты</a></li>
         </ul>
         <ul class="menu-container__contacts">
@@ -341,7 +573,9 @@
             <a href="tel:+380961111111" class="menu-container__contacts-tel">+38 096 111 11 11</a>
           </li>
           <li class="menu-container__contacts-item">
-            <a href="mailto:info@devstudio.com" class="menu-container__contacts-mail">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="menu-container__contacts-mail"
+              >info@devstudio.com</a
+            >
           </li>
         </ul>
         <ul class="menu-container__socials">
@@ -361,9 +595,12 @@
       </div>
     </div>
     <!-- Мобильное меню -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <script defer src="js/menu.js"></script>
   </body>
 </html>
