@@ -202,6 +202,18 @@ button {
   transition: background-color var(--anim-duration) var(--timing-anim), box-shadow var(--anim-duration) var(--timing-anim), -webkit-box-shadow var(--anim-duration) var(--timing-anim);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .portfolio-title-none {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .card-item:first-child .card-name {
+    padding-bottom: 56px;
+  }
+}
+
 .hero .hero__title {
   -webkit-animation: fade-top-to-botton 1s;
           animation: fade-top-to-botton 1s;
@@ -384,7 +396,7 @@ button {
   background-color: #f5f4fa;
   cursor: pointer;
   font-family: inherit;
-  padding: 6px 32px;
+  padding: 6px 22px;
   border: none;
   border-radius: 4px;
   -webkit-transition: background-color var(--anim-duration) var(--timing-anim), color var(--anim-duration) var(--timing-anim), border-radius var(--anim-duration) var(--timing-anim), -webkit-box-shadow var(--anim-duration) var(--timing-anim);

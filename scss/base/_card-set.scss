@@ -53,3 +53,17 @@
   transition: background-color var(--anim-duration) var(--timing-anim),
     box-shadow var(--anim-duration) var(--timing-anim);
 }
+
+.portfolio-title-none {
+  @include mg (tablet-only) {
+    display: block;
+  }
+  
+}
+
+.card-item:first-child .card-name {
+  @include mg(tablet-only) {
+    padding-bottom: 56px;
+  }
+
+}
